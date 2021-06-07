@@ -1,0 +1,26 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	font-size: 20px;
+	color: black;
+}
+
+h1 {
+	padding: 12px;
+	color:  black;
+}
+div {
+	padding: 10px 20px;
+}
+.i{
+        
+	max-width: 100%;
+}
+.receta{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+
+}

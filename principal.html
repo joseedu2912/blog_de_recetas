@@ -1,0 +1,170 @@
+<?php
+session_start();
+if(isset($_SESSION['id']) && isset($_SESSION['usuario'])){
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocinaLatinoamericana</title>
+    <meta name="description" content="Pagina web de blog de café sobre nuestros cursos">
+    <!--Prefetch-->
+    <link rel="prefetch" href="cursos.html" as="document">
+    <!--preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!-- aqui lo que le estamos indicando es que cargue en seguida el documento que le estamos indicando con href y con as le estamos indicando el tipo de archivo que es -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <!-- aqui solo añadimos algo ma spor que son las fuentes externas de google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="principal.html">
+                    <h1 class="logo__nombre no-margin centrar-texto logo__bold">Latinoamerica y sus Recetas</h1>
+                    <!--con la etiqueta se puede modificar el estilos de un tecto sin alterar la estructura-->
+                </a>
+                <nav class="navegacion">
+
+                    <a href="reporteerrores.html" class="navegacion__enlace">Resporte de Errores</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre nosotros</a>
+                    <a href="usuario.php" class="navegacion__enlace">Usuario</a>
+                     <a href="cerrar_cuenta.php" class="navegacion__enlace">Cerrar cuenta</a>
+                </nav>
+            </div>
+            <div class="header__texto">
+                <h2 class="no-margin">Mantener la Cultura Gastronomica Latinoamericana</h2>
+                <p class="no-margin">Las Mejores Recetas que Puedes Encontrar</p>
+            </div>
+    </header>
+
+
+
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Recetas por País</h3>
+            <article class="entrada">
+
+             <iframe src="indexargentina.php" width="800" height="3800" name="iframe"></iframe>
+
+
+
+
+        </main>
+        <aside class="sidebar">
+            <h3>Recetas Por Pais</h3>
+            <ul class="cursos no-padding">
+                <!-- esta etiqueta quiere deccir que es una lista no ordenada -->
+                <li class="widget-curso">
+                    <a href="indexargentina.php" class="boton boton--secundario" target="iframe">Argentina</a>
+
+                </li>
+                <!--aqui termina el list no ordenada-->
+                <li class="widget-curso">
+                    <a href="indexbrasil.php" class="boton boton--secundario" target="iframe">Brasil</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexpanama.php" class="boton boton--secundario" target="iframe">Panama</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexsalvador.php" class="boton boton--secundario" target="iframe">Salvador</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexvenezuela.php" class="boton boton--secundario" target="iframe">Venezuela</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexnicaragua.php" class="boton boton--secundario" target="iframe">Nicaragua</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexparaguay.php" class="boton boton--secundario" target="iframe">Paraguay</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexmexico.php" class="boton boton--secundario" target="iframe">Mexico</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexcolombia.php" class="boton boton--secundario" target="iframe">Colombia</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexperu.php" class="boton boton--secundario" target="iframe">Peru</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexchile.php" class="boton boton--secundario" target="iframe">Chile</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexrepublicadominicana.php" class="boton boton--secundario" target="iframe">Republica Dominicana</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexcuba.php" class="boton boton--secundario" target="iframe">Cuba</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexguatemala.php" class="boton boton--secundario" target="iframe">Guatemala</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexbolivia.php" class="boton boton--secundario" target="iframe">Bolivia</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexcostarica.php" class="boton boton--secundario" target="iframe">Costa Rica</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexecuador.php" class="boton boton--secundario" target="iframe">Ecuador</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexhonduras.php" class="boton boton--secundario" target="iframe">Honduras</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexurugay.php" class="boton boton--secundario" target="iframe">Urugay</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexhaiti.php" class="boton boton--secundario" target="iframe">Haiti</a>
+                </li>
+                <li class="widget-curso">
+                    <a href="indexpuertorico.php" class="boton boton--secundario" target="iframe">Puerto Rico</a>
+                </li>
+
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+   <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="principal.html">
+                    <h1 class="logo__nombre no-margin centrar-texto logo__bold">Latinoamerica y sus Recetas</h1>
+                    <!--con la etiqueta se puede modificar el estilos de un tecto sin alterar la estructura-->
+                </a>
+                <nav>
+                    <a href="usuario.php" class="navegacion__enlace">Usuario</a>
+
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre Nosotros</a>
+                    <a href="reporteerrores.html" class="navegacion__enlace">Resporte de Errores</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/modernizr-custom.js"></script>
+</body>
+
+</html>
+
+<?php
+}else{
+header("Location: index.php");
+exit();
+}
+?>
+

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta neame="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocinaLatinoamericana</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="principal.html">
+                    <h1 class="logo__nombre no-margin centrar-texto logo__bold">Latinoamerica y sus Recetas</h1>
+
+                </a>
+                <nav class="navegacion">
+
+                    <a href="usuario.php" class="navegacion__enlace">Usuario</a>
+
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre nosotros</a>
+                    <a href="cerrar_cuenta.php" class="navegacion__enlace">Cerrar cuenta</a>
+                </nav>
+            </div>
+            <div class="header__texto">
+                <h2 class="no-margin">Aqui puede reportar cualquier error que arruine su experiencia como usuario</h2>
+                <p class="no-margin">Los errores que se reporten seran solucionados de la forma mas rapida posible por el equipo tecnico</p>
+            </div>
+    </header>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Reporte de errores</h3>
+        <div class="contacto-bg"></div>
+       
+
+
+    <form class="formulario" action="registro.php" name="" method="POST">
+      <table border="0" align="center">
+        <tr>
+          <td>
+            Reporte error:
+          </td>
+          <td>
+            <label for="error"></label>
+            <textarea class="campo__field campo__fiedl--textarea" type="text" name="error" id="error" required>  </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="submit"
+              name="enviar"
+              id="enviar"
+              value="Registrarse"
+            />
+          </td>
+
+        </tr>
+      </table>
+    </form>
+
+
+
+    </main>
+
+
+    <footer class="footer ">
+        <div class="contenedor ">
+            <div class="barra ">
+                <a class="logo " href="principal.html ">
+                    <h1 class="logo__nombre no-margin centrar-texto logo__bold">Latinoamerica y sus Recetas</h1>
+
+                    <!--con la etiqueta se puede modificar el estilos de un tecto sin alterar la estructura-->
+                </a>
+                <nav>
+                    <a href="usuario.php" class="navegacion__enlace">Usuario</a>
+
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre Nosotros</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/modernizr-custom.js "></script>
+
+</body>
+
+</html>
